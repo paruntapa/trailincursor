@@ -31,4 +31,47 @@ p {
   flex-direction: column;
   justify-content: center;
   overflow: hidden;
+  align-items: center;
+}
+
+.hero-img {
+  position: absolute;
+  opacity: 0.2;
+  height: 100%;
+  width: 100%;
+}
+
+.trail-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.trail-img {
+  position: absolute;
+  width: 175px;
+  height: 175px;
+  pointer-events: none;
+}
+
+.trail-img .mask-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #101010;
+  will-change: clip-path;
+}
+
+.trail-img .mask-layer .image-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
 }
